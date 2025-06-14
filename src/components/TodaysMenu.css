@@ -1,0 +1,151 @@
+/* TodaysMenu.css */
+
+/* Reset and base */
+.menu-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px 100px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+  filter: brightness(0.5);
+}
+
+/* Curves */
+.menu-curve svg {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.menu-curve-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu-curve-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.curve-path {
+  fill: #FFE6E1;
+  opacity: 0.9;
+}
+
+/* Heading */
+.menu-heading {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #FFE6E1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards */
+.menu-card {
+  position: relative;
+  margin: 30px auto;
+  padding: 25px 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Ribbons */
+.corner-ribbon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #FF3F33;
+  padding: 5px 15px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px 0 8px 0;
+  font-size: 0.9rem;
+}
+
+.corner-ribbon.veg {
+  background-color: #9FC87E;
+}
+
+.corner-ribbon.special {
+  background-color: #FF3F33;
+}
+
+.corner-ribbon.addons {
+  background-color: #075B5E;
+}
+
+/* Menu List & Price */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.menu-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #FFE6E1;
+}
+
+.menu-special-name {
+  margin: 15px 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Note */
+.menu-note {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: #f2f2f2;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .menu-card {
+    padding: 20px 15px;
+    margin: 20px 0;
+  }
+
+  .menu-heading {
+    font-size: 1.8rem;
+  }
+
+  .menu-price,
+  .menu-special-name {
+    font-size: 1rem;
+  }
+
+  .corner-ribbon {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}

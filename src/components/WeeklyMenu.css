@@ -1,0 +1,83 @@
+/* WeeklyMenu.css */
+.weekly-section {
+  padding: 60px 20px;
+  background-color: #FFE6E1; /* light peachy background */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.weekly-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  color: #075B5E;
+  margin-bottom: 40px;
+}
+
+.weekly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.day-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-top: 4px solid transparent;
+}
+
+.day-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.day-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.dish-icon {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+
+.special-name {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 🟢 Veg */
+.day-card.veg {
+  border-top: 4px solid #9FC87E;
+}
+
+/* 🍳 Egg */
+.day-card.egg {
+  border-top: 4px solid #075B5E;
+}
+
+/* 🔴 Non-veg */
+.day-card.nonveg {
+  border-top: 4px solid #FF3F33;
+}
+
+/* 🍗🧀 Mixed */
+.day-card.mixed {
+  border-top: 4px solid #FF3F33;
+  background-color: #fff5f3;
+}
+
+/* ❌ Closed */
+.day-card.closed {
+  border-top: 4px solid #bbb;
+  background-color: #f5f5f5;
+  color: #888;
+}

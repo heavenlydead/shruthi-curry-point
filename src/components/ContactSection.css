@@ -1,0 +1,98 @@
+/* ContactSection.css */
+.contact-section {
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #FFE6E1 0%, #FFF 100%);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  text-align: center;
+  color: #075B5E;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  color: #FF3F33;
+}
+
+.contact-quote {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #075B5E;
+  margin: 0 auto 32px;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.fade-in-up {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.contact-details {
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #075B5E;
+}
+
+.contact-details p {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}

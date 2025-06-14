@@ -1,0 +1,141 @@
+/* OrderInfo.css */
+
+.order-section {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff, #fab7aa);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.order-curve-top svg,
+.order-curve-bottom svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.order-curve-path {
+  fill: #FFF0EC;
+}
+
+.order-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #075B5E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.order-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #FF3F33;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.order-details {
+  margin-bottom: 2rem;
+}
+
+.timing-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.timing-note {
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.why-choose {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  margin: 2rem auto;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  color: #333;
+  max-width: 400px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.order-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.order-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #075B5E;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(7, 91, 94, 0.2);
+}
+
+.order-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(7, 91, 94, 0.35);
+}
+
+.order-button.whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.order-button.call {
+  background: linear-gradient(135deg, #FFA726, #FB8C00);
+}
+
+.order-button.join-channel {
+  background: linear-gradient(135deg, #FF3F33, #E53935);
+}
+
+.payment-note {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+/* Mobile-first layout */
+@media (min-width: 600px) {
+  .order-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

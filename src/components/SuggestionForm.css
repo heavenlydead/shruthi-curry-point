@@ -1,0 +1,90 @@
+.suggestion-section {
+  background: linear-gradient(145deg, #f7fff9, #eafff2);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 100px;
+}
+
+.suggestion-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 36px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 0.7s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.suggestion-title {
+  font-size: 1.75rem;
+  color: #075B5E;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.suggestion-subtext {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.suggestion-form input,
+.suggestion-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.suggestion-form input:focus,
+.suggestion-form textarea:focus {
+  border-color: #9FC87E;
+  box-shadow: 0 0 8px rgba(159, 200, 126, 0.5);
+  outline: none;
+}
+
+.suggestion-form button {
+  background-color: #FF3F33;
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.suggestion-form button:hover {
+  background-color: #e8382d;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(255, 63, 51, 0.3);
+}
+
+.thank-you-message {
+  font-size: 1.1rem;
+  color: #075B5E;
+  background-color: #e6fff3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
