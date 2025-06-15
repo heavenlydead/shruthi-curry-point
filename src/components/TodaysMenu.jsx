@@ -6,16 +6,17 @@ const TodaysMenu = () => {
     <section id="menu" className="menu-section">
 
       {/* Background Video */}
-      <video
-      className="hero__video"
-      autoPlay
-      loop
-      muted
-      playsInline
-    >
-      <source src="/videos/hero-curry.mp4" type="video/mp4" />
-      Your browser doesn’t support videos.
-    </video>
+     <video
+        className="hero__video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/images/hero-fallback.png"
+      >
+        <source src="/videos/hero-curry.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Top SVG curve */}
       <div className="menu-curve menu-curve-top">

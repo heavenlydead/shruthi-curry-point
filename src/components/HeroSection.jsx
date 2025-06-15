@@ -1,26 +1,42 @@
 import React from 'react';
 import './HeroSection.css';
 
-const HeroSection = () => (
-  <section id= "hero" className="hero">
-    <video
-      className="hero__video"
-      autoPlay
-      loop
-      muted
-      playsInline
-    >
-      <source src="/videos/hero-curry.mp4" type="video/mp4" />
-      Your browser doesn’t support videos.
-    </video>
+const HeroSection = () => {
+  return (
+    <section className="hero">
+      <video
+        className="hero__video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/images/hero-fallback.png"
+      >
+        <source src="/videos/hero-curry.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-    <div className="hero__content">
-      <h1>Shruthi Curry Point</h1>
-      <p>Hot, Homemade Meals Delivered to Your Hostel</p>
-      <span className="hero__tagline">Everyday | 5 PM – 10 PM</span>
-      <div className="hero__scroll">Scroll ↓</div>
-    </div>
-  </section>
-);
+      <div className="hero__overlay" />
+
+      <div className="hero__content">
+        <h1 className="hero__title">Shruthi <span>Curry Point</span></h1>
+
+        <p className="hero__quote">
+          "Where homemade flavors meet hostel hunger!"
+        </p>
+
+        <div className="hero__timings">
+          <p>🕒 12:30 PM – 2:00 PM</p>
+          <p>🌙 6:00 PM – 10:00 PM</p>
+        </div>
+
+        <a href="#menu" className="hero__scroll-btn">
+          ↓
+          <span className="click-text">Scroll down</span>
+        </a>
+      </div>
+    </section>
+  );
+};
 
 export default HeroSection;

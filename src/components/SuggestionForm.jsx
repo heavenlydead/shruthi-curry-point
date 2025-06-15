@@ -30,7 +30,7 @@ const SuggestionForm = () => {
           onSubmit={handleSuccessToast}
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://shruthicurrypoint.github.io/#suggest" />
+          <input type="hidden" name="_next" value="https://shruthicurrypoint.netlify.app/" />
           <input type="text" name="_honey" style={{ display: 'none' }} />
 
           <input

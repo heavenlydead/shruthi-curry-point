@@ -38,18 +38,7 @@ const OrderInfo = () => {
       </div>
 
       <div className="order-actions">
-        <a
-          href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20order%20today's%20meal%20from%20Shruthi%20Curry%20Point."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="order-button whatsapp"
-        >
-          📲 Order via WhatsApp
-        </a>
-
-        <a href="tel:+919876543210" className="order-button call">
-          📞 Call to Enquire
-        </a>
+         
 
         <a
           href="https://whatsapp.com/channel/join-link-here"
