@@ -1,9 +1,20 @@
-/* Topbar.css */
+/* Prevent global overflow and force proper layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure topbar does not overflow */
 .topbar {
   position: sticky;
   top: 0;
   width: 100%;
+  max-width: 100vw;
   background: linear-gradient(90deg, #ffffff 0%, #f8bcbc 100%);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   z-index: 1000;
@@ -13,6 +24,7 @@
   padding: 18px 48px;
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
 }
 
 .topbar.scrolled {
@@ -32,6 +44,7 @@
   color: #075B5E;
   transition: all 0.3s ease;
   animation: glowPulse 2.4s ease-in-out 1;
+  white-space: nowrap;
 }
 
 @keyframes glowPulse {
@@ -62,6 +75,7 @@
   align-items: center;
   margin-right: 50px;
   transition: all 0.3s ease;
+  overflow-x: hidden;
 }
 
 .topbar__nav a {
@@ -76,6 +90,7 @@
   border-radius: 6px;
   transition: all 0.3s ease;
   position: relative;
+  white-space: nowrap;
 }
 
 .topbar__nav a:hover,
@@ -104,7 +119,6 @@
   transform-origin: left;
 }
 
-/* Hamburger menu */
 .topbar__hamburger {
   display: none;
   width: 24px;
@@ -112,6 +126,7 @@
   position: relative;
   cursor: pointer;
   transition: all 0.4s ease;
+  flex-shrink: 0;
 }
 
 .topbar__hamburger::before,
@@ -152,11 +167,11 @@
   opacity: 0;
 }
 
-/* ✅ Responsive Improvements */
+/* ✅ RESPONSIVE FIXES */
 @media (max-width: 768px) {
   .topbar {
     padding: 12px 16px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .topbar__logo {
@@ -166,11 +181,6 @@
 
   .topbar__icon {
     font-size: 1.4rem;
-  }
-
-  .topbar__hamburger {
-    display: block;
-    margin-left: auto;
   }
 
   .topbar__nav {
@@ -189,6 +199,8 @@
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 999;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .topbar__nav.active {
@@ -201,9 +213,13 @@
     width: 100%;
     padding: 10px 0;
   }
+
+  .topbar__hamburger {
+    display: block;
+  }
 }
 
-/* Smooth scroll for anchor links */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
