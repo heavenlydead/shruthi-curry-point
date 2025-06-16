@@ -14,7 +14,7 @@ const weeklyData = [
 
 const WeeklyMenu = () => {
   return (
-    <section className="weekly-section">
+    <section id= "weekly" className="weekly-section">
       <h2 className="weekly-heading">📅 Weekly Curry Preview</h2>
 
       <div className="weekly-grid">

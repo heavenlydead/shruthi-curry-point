@@ -1,9 +1,20 @@
 import React from 'react';
 import './HeroSection.css';
+import { FaChevronDown } from 'react-icons/fa'; 
 
 const HeroSection = () => {
+
+
+  const smoothScroll = (e, targetId) => {
+  e.preventDefault();
+  const section = document.getElementById(targetId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
   return (
-    <section className="hero">
+    <section id = "hero" className="hero">
       <video
         className="hero__video"
         autoPlay
@@ -30,10 +41,10 @@ const HeroSection = () => {
           <p>🌙 6:00 PM – 10:00 PM</p>
         </div>
 
-        <a href="#menu" className="hero__scroll-btn">
-          ↓
-          <span className="click-text">Scroll down</span>
-        </a>
+        <a href="#menu" className="hero__scroll-btn" onClick={(e) => smoothScroll(e, 'menu')}>
+  <FaChevronDown className="scroll-icon" />
+  <span className="click-text">Scroll down</span>
+</a>
       </div>
     </section>
   );
