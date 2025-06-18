@@ -18,11 +18,13 @@ const ContactSection = () => {
       <div className="contact-container fade-in-up">
         <div className="contact-details">
           <p>
-            <FaMapMarkerAlt /> <strong>Address:</strong><br />
-            Near Margadarshi Colony Park,<br />
-            Beside Kothapet Vegetable Market,<br />
-            Kothapet, Hyderabad – 500035
-          </p>
+  <FaMapMarkerAlt /> <strong>Address:</strong><br />
+  Backside of Spicy Hub, Road No. 4,<br />
+  Near Margadarshi Colony Park,<br />
+  Beside Kothapet Vegetable Market,<br />
+  Kothapet, Hyderabad – 500035
+</p>
+
 
           <p>
             <FaClock /> <strong>Timings:</strong><br />

@@ -1,4 +1,5 @@
-/* Topbar.css */
+/* === Topbar.css (Optimized and Mobile-Fixed) === */
+
 .topbar {
   position: sticky;
   top: 0;
@@ -9,14 +10,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 48px;
+  padding: 18px clamp(16px, 5vw, 48px); /* Responsive padding */
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease-in-out;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .topbar.scrolled {
   background: linear-gradient(90deg, #ffffff 0%, #b3f5ea 100%);
-  padding: 10px 32px;
+  padding: 10px clamp(12px, 4vw, 32px);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
 }
@@ -29,12 +31,12 @@
   font-weight: 800;
   text-decoration: none;
   color: #075B5E;
-  transition: all 0.3s ease;
   animation: glowPulse 2.4s ease-in-out 1;
   white-space: nowrap;
   cursor: pointer;
 }
-.logo-main{
+
+.logo-main {
   color: #FF3F33;
 }
 
@@ -59,7 +61,6 @@
   display: flex;
   gap: 26px;
   align-items: center;
-  margin-right: 50px;
 }
 
 .topbar__nav a {
@@ -109,6 +110,6 @@
   }
 
   .topbar {
-    padding: 14px 24px;
+    padding: 14px clamp(12px, 5vw, 24px);
   }
 }
