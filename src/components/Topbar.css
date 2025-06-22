@@ -1,9 +1,7 @@
-/* === Topbar.css (Optimized and Mobile-Fixed) === */
-
 .topbar {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100vw; /* Force full screen width */
   background: linear-gradient(90deg, #ffffff 0%, #f8bcbc 100%);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   z-index: 1000;
@@ -14,6 +12,7 @@
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease-in-out;
   overflow-x: hidden; /* Prevent horizontal overflow */
+  box-sizing: border-box; /* Ensure padding doesn't expand width */
 }
 
 .topbar.scrolled {
