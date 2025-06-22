@@ -41,7 +41,7 @@ const OrderInfo = () => {
          
 
         <a
-          href="https://whatsapp.com/channel/join-link-here"
+          href="https://www.whatsapp.com/channel/0029VbB2gfkIyPtLVa24EH43"
           target="_blank"
           rel="noopener noreferrer"
           className="order-button join-channel"

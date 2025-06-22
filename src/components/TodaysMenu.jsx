@@ -31,34 +31,31 @@ const TodaysMenu = () => {
       </h2>
 
       <div className="menu-card glassmorph">
-        <div className="corner-ribbon veg">🥗 Veg</div>
-        <ul className="menu-list">
-          <li>2 Chapatis</li>
-          <li>Steamed Rice</li>
-          <li>Dal Tadka</li>
-          <li>Fresh Salad</li>
-        </ul>
-        <p className="menu-price">
-          💰 ₹60 only
-        </p>
-      </div>
-
-      <div className="menu-card glassmorph">
-        <div className="corner-ribbon special">🍛 Special</div>
-        <p className="menu-special-name">Egg Curry (Boiled Egg in Spicy Gravy)</p>
-        <p className="menu-price">
-          ✅ Included in meal
-        </p>
-      </div>
-
-      <div className="menu-card glassmorph">
-        <div className="corner-ribbon addons">➕ Add-ons</div>
-        <ul className="menu-list">
-          <li>Extra Chapati – ₹5</li>
-          <li>Boiled Egg – ₹10</li>
-          <li>Chicken Curry (1 portion) – ₹30</li>
-        </ul>
-      </div>
+  <div className="corner-ribbon veg">🥗 Veg</div>
+  <ul className="menu-list">
+    <li>Paneer Curry – ₹40</li>
+    <li>Veg Curry – ₹20</li>
+    <li>Veg Fry – ₹20</li>
+    <li>Dal – ₹20</li>
+    <li>Sambhar – ₹20</li>
+  </ul>
+</div>
+<div className="menu-card glassmorph">
+  <div className="corner-ribbon nonveg">🍗 Non-Veg</div>
+  <ul className="menu-list">
+    <li>Chicken Curry – ₹60</li>
+    <li>Chicken Fry – ₹60</li>
+    <li>Egg Curry – ₹30</li>
+    <li>Egg Bhurji – ₹30</li>
+  </ul>
+</div>
+<div className="menu-card glassmorph">
+  <div className="corner-ribbon chapati">🫓 Chapati</div>
+  <ul className="menu-list">
+    <li>Normal Chapati – ₹10</li>
+    <li>Butter Chapati – ₹15</li>
+  </ul>
+</div>
 
       <p className="menu-note">📌 Note: Menu updates daily by 10:30 AM. Bookmark this page!</p>
 
